@@ -1,4 +1,7 @@
-body{
+* {
+    box-sizing: border-box;
+  }
+  body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -206,11 +209,15 @@ input{
 }
 
 .dados-contato input {
+    box-sizing: border-box;
     border:1px solid #172129;
     width: 21.5%;
     height: 45px;
-    margin-right: 3.2%;
     padding: 2px 8px;
+}
+.dados-nome,
+.dados-sobrenome{
+    margin-right: 3.2%;
 }
 
 .dados-nome{
@@ -219,18 +226,134 @@ input{
 .inform-contato{
     display: flex;
 }
+.inform-contato input,
+textarea{
+    border:1px solid #172129;
+    box-sizing: border-box;
+    padding: 8px;
+}
 .msg-contato{
     margin-left: 13.8%;
     margin-top: 30px;
-    width: 35.4%;
+    width: 35.45%;
     height: 120px;
+    padding-top: 10px;
 }
 .tel-contato{
     margin-top: 30px;
-    margin-left: 3.05%;
-    width: 32.35%;
     height: 45px;
+    width: 100%;
+}
+.div-text-button-contato{
+    width: 33.25%;
+    margin-left: 3.05%;
 }
 .text-button-contato{
     display: flex;
+}
+.text-button-contato p{
+    margin-top: 30px;
+    font-size: 10px;
+}
+.text-button-contato input{
+    height: 45px;
+    width: 89.8%;
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 14.5%;
+    border: none;
+    font-size: 15px;
+    background-color: #26b522;
+    cursor: pointer;
+    color: #FFFF
+}
+.div-footer-section{
+    margin-top: 80px;
+    padding-top:25px ;
+    background-color: #333333;
+    height: 392px;
+    width: 100%;
+}
+.footer-section{
+    display: flex;
+    height: 327px;
+    width: 88.75%;
+    margin: 0 57.03% 29px 5.54%;
+    border: 3px solid #FFFF
+}
+.newsletter-portfolio,
+.menu-sobre{
+    height: 100%;
+    width: 50%;
+    border: 2px solid #FFF;
+    outline: none;
+}
+.newsletter-input-button{
+    margin-left: 3%;
+    width: 92.7%;
+    display: flex;
+}
+.newsletter-email{
+    padding-left: 8px;
+    border: none;
+    height: 45px;
+    width: 62.65%;
+}
+.newsletter-email-button{
+    width: 37.34%;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    background-color: #26b522;
+}
+.newsletter-portfolio h1{
+    margin-top: 20px;
+    margin-left: 3%;
+    font-size: 15px;
+    color: #FFF;
+}
+.portfolio-footer{
+    margin-top: 57px;
+}
+.portfolio-link{
+    margin-left: 3%
+}
+.menu-sobre-options{
+    color: #FFF;
+    display: flex;
+}
+.menu ul{
+    list-style: none;
+}
+.sobre ul{
+    list-style: none;
+}
+.menu ul li h2{
+    font-weight: 700;
+    font-size:15px;
+    margin-bottom: 20px;
+}
+.menu ul li h3{
+    font-size:11px;
+}
+.sobre ul li h2{
+    font-weight: 700;
+    font-size:15px;
+    margin-bottom: 20px;
+}
+.sobre ul li h3{
+    font-size:11px;
+}
+.vasta-logo{
+    position: relative;
+}
+.vasta-logo img{
+    margin-top: 70px;
+    margin-left: calc(50% - 73.5px);
+}
+.menu-sobre-options{
+    width: 100%;
+}
+.sobre{
+    margin-left: 35%;
 }
