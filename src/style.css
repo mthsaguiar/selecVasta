@@ -20,7 +20,7 @@ input{
 .header-section{
     background-image: url("../img/banner.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
     height: 527px;
 }
@@ -96,9 +96,18 @@ input{
 }
 
 .sobre-img-1{
+    width: 100%;
+    height: 100%;
+    min-width: 240px;
+    min-height: 200px;
     margin-left: 70px;
     margin-right: 30px;
     margin-top: 13px;
+}
+.sobre-img-1 img{
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .sobre-content{
@@ -106,6 +115,12 @@ input{
 }
 
 .sobre-text-button p{
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 12em;
+    margin-right: -1.5em;
+    padding-right: 1.5em;
     margin: 0;
     font-size: 16px;
     line-height: 2.5;
@@ -119,22 +134,36 @@ input{
     cursor: pointer;
 
 }
-.sobre-text{
+.sobre-text p{
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 12em;
+    padding-left: -0.5em;
     margin-left: 70px;
+    margin-right: 10px;
     font-size: 16px;
     line-height: 2.5;
 }
 .sobre-img-2{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    min-width: 240px;
+    min-height: 200px;
     margin-right: 70px;
+}
+.sobre-img-2 img{
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .portfolio-img ul{
-    margin: 0;
-    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto ;
     list-style: none;
     text-align: left;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 .section-button-port {
@@ -198,6 +227,10 @@ input{
 }
 
 .perfil-classifica-texto p{
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 6em;
     font-size: 9.88px;
     margin-top: 0;
     margin-left: 11px;
@@ -267,12 +300,15 @@ textarea{
     cursor: pointer;
     color: #FFFF
 }
-.div-footer-section{
-    margin-top: 80px;
-    padding-top:25px ;
+.footer{
     background-color: #333333;
     height: 392px;
     width: 100%;
+}
+
+.div-footer-section{
+    margin-top: 80px;
+    padding-top:25px ;
 }
 .footer-section{
     display: flex;
@@ -316,6 +352,8 @@ textarea{
     margin-top: 57px;
 }
 .portfolio-link{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     margin-left: 3%
 }
 .menu-sobre-options{
@@ -356,4 +394,42 @@ textarea{
 }
 .sobre{
     margin-left: 35%;
+}
+
+@media only screen and (max-width:1000px){
+    .header-section{
+        height: 400px;
+    }
+    .banner-content h1{
+        font-size: 35px;
+    }
+    .banner-content h2 {
+        margin-top: 8px;
+        font-size: 20px;
+    }
+    .portfolio-link img{
+        max-width: 70px;
+        max-height: 70px;
+    }
+}@media only screen and (max-width: 700px){
+    .header-section{
+        height: 325px;
+    }
+    
+}@media (min-width: 1280px){
+    .sobre-section,
+    .depoimentos-slider,
+    .contato-container,
+    .div-footer-section{
+        max-width: 1280px;
+        margin-left: calc( ( 100% - 1280px ) / 2)
+    }
+}@media (max-width: 1100px){
+    .portfolio-img ul{
+        grid-template-columns: auto auto;
+    }
+    .portfolio-link img{
+        max-width: 90px;
+        max-height: 90px;
+    }
 }
