@@ -169,6 +169,8 @@ input{
     background-size: 100% 100%;
 }
 .leia-mais{
+
+    display: none;
     padding-top: 30px;
     padding-bottom: 10px;
     text-align: center;
@@ -510,7 +512,8 @@ textarea{
         display: none;
     }
     .header-section-mobile,
-    .sobre-img-mobile{
+    .sobre-img-mobile,
+    .leia-mais{
         display: block;
     }
     .section-title{
